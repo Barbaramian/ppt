@@ -1,0 +1,102 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+html,
+body,
+.wrapper,
+.pageList,
+.page {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .pageList .page:nth-child(1) {
+    background: url(images/bg-1.jpg) no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.wrapper .pageList .page:nth-child(2) {
+    background: url(images/bg-2.jpg) no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.wrapper .pageList .page:nth-child(3) {
+    background: url(images/bg-3.jpg) no-repeat;
+    background-size: cover;
+    display: none;
+}
+.wrapper .pageList .page:nth-child(2) img{
+    width: 0%;
+}
+.wrapper .pageList .page:nth-child(3) img {
+    width: 0%;
+}
+
+.wrapper .pageList img {
+    position: absolute;
+    width: 30%;
+    right: 15%;
+    top: 20%;
+}
+
+.wrapper .pageList .title {
+    position: absolute;
+    width: 25%;
+    left: 20%;
+    top: 20%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.wrapper .pageList {
+    color: #fff;
+}
+
+.wrapper .btn {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.wrapper .btn img {
+    cursor: pointer;
+}
+
+.wrapper .btn img:nth-child(1) {
+    float: left;
+    margin-left: 60px;
+}
+
+.wrapper .btn img:nth-child(2) {
+    float: right;
+    margin-right: 60px;
+}
+
+.wrapper .point {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper .point li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.wrapper .point li.active {
+    background-color: red;
+}
+
